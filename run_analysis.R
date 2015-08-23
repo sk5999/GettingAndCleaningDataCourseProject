@@ -217,6 +217,11 @@
          colnames(DataExtract) <-  ColumnNames
          colnames(DataExtract)   ##  To verify addition of columnnnames
 
+         write.table(DataExtract, file = "Step4DataExtract.txt", sep = " ", eol = "\n", 
+           col.names = TRUE, row.names= FALSE)
+
+         
+
 ####-----------------------------------------------------------------------------------
 ####  AVERAGE OF EACH VARIABLE FROM DataExtract FOR EACH ACTIVTY AND EACH SUBJECT
 ####     ALSO INCLUDED IS THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVTY BY SUBJECT
@@ -228,20 +233,7 @@
       library(dplyr)
 
 
-###   AVERAGE BY ACTIVITY
-
-###   AverageByActivty <-  ddply(DataExtract,"Activity", summarize, 
-                                 Average =  mean(DataExtract[ , 3:81])
-
-     AverageByActivty <-  summarize(DataExtract$Activty, mean(DataExtract[, #:81]))
-
-     AverageByActivty <- data.frame()
-     for (n in seq_along(DataExtract$Activty)) {
-         for (DataExtract$Activity == n) {
-         ColMeans <-  colMeans(DataExtract[,3:81])
-         AverageByActivty <-  rbind(AverageByActivity, ColMeans)
-       )
-       } 
+###   WAS UNABLE TO COMPLETE STEP 5 OF PROJECT BY THE DEADLINE
 
 
  
