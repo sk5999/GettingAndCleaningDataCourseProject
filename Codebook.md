@@ -75,7 +75,7 @@ DATA PROCESSING STEPS   (ALL FUNCTIONS REFERENCES ARE TO R FUNCTIONS UNLESS OTHE
 7.  The Ytrain and Ytest data frames which identify Activity (Codes for Walking, WalkingUpstairs, WalkingDownstairs,Sitting, Standing, Laying ) for each record  in Xtrain and Ytrain respectively, were column binded to the Step 6 data frames after converting the number codes from 1:6 to the corresponding activity.
 8   Xtrain and Xtest were then row binded.  The number of rows in the merged data frame was confirmed equal to the sum of the rows in Xtrain and Xtest. 
 9   The Features data frame identifies the column headings for Xtrain and Xtest .  The “Activity” and “Subject” headings were appended to the beginning of Features.  The modified Features, after nominal ediiting,  was added as Column Names to the merged data frame from Step 8.
-10. A subset of the Step 9 data frame, with the Subject and Activity Columns, as well as all columns with “-Mean” and “-Std” was extracted.  This was to be used for the Step 5 analysis in the project.
-11. Step 5 could  not be completed prior to the deadline.  The S.tep 4 data set has been submitted as evidence of the work completed
+10. A subset of the Step 9 data frame, with the Subject and Activity Columns, as well as all columns with “-Mean” and “-Std” was extracted 81 COLUMNS IN ALL).  This was to be used for the Step 5 analysis in the project.
+11. Step 5 could  not be completed prior to the deadline.  The Step 4 data set has been submitted as evidence of the work completed
     
    
